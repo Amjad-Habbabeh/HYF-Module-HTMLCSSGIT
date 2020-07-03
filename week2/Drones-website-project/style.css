@@ -94,7 +94,7 @@ li {
   overflow: auto;
   margin: 1%;
   padding-left: 10px;
-  width: 40%;
+  width: 48%;
   height: 50vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition-property: all;
@@ -104,7 +104,7 @@ li {
 }
 #grid-floats img {
   float: right;
-  width: 38%;
+  width: 30%;
   margin: 10px;
 }
 #grid-floats p {
@@ -140,7 +140,6 @@ li {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
   align-items: flex-start;
 }
 #grid-flex img {
@@ -152,7 +151,7 @@ li {
 }
 #grid-flex .grid-item {
   background-color: white;
-  margin: 5px;
+  margin: 1%;
   padding: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
@@ -161,14 +160,15 @@ li {
   transition-delay: 0.1s;
   transition-timing-function: ease-in-out;
 }
-#grid-flex .grid-item:nth-child(n + 1) {
-  width: 40%;
-}
-#grid-flex .grid-item:nth-child(n + 3) {
-  width: 20%;
-  margin: 0.5%;
+#grid-flex .grid-item:nth-child(1) {
+  width: 48%;
   height: 50vh;
-  font-size: 0.7em;
+}
+#grid-flex .grid-item:nth-child(n + 3),
+#grid-flex li:nth-child(2) {
+  width: 23%;
+  height: 50vh;
+  /* font-size: 0.7em; */
 }
 #grid-flex p {
   line-height: 1.17em;
@@ -190,7 +190,6 @@ li {
 }
 #grid-flex li:hover p {
   font-size: 1.17em;
-  height: 30vh;
 }
 /* responsive tablets (between 600px and 1024px):
  a three column grid, with the exception that the first two items span the full width together
@@ -245,7 +244,7 @@ li {
     font-size: 1em;
   }
   #grid-floats li:nth-child(n + 3) {
-    width: 30%;
+    width: 31.5%;
     margin: 0.5%;
     height: 30vh;
     font-size: 0.7em;
@@ -260,8 +259,13 @@ li {
     height: 13vh;
   }
 
+  #grid-flex li:nth-child(2),
+  #grid-flex li.grid-item:nth-child(1) {
+    width: 47%;
+    height: 30vh;
+  }
   #grid-flex .grid-item:nth-child(n + 3) {
-    width: 30%;
+    width: 31.5%;
     margin: 0.5%;
     height: 25vh;
     font-size: 0.8em;
