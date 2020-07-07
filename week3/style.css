@@ -131,24 +131,30 @@ table {
   margin: 0;
   padding: 0;
 }
-
 body {
   background-color: white;
   color: #00112c;
   font-family: 'Fakt', sans-serif, Helvetica, Arial;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 26px;
   box-sizing: border-box;
 }
+h1 {
+  font-size: 48px;
+  line-height: 58px;
+}
+strong {
+  font-weight: 600;
+}
 /* ---------------header style */
 .container {
   display: flex;
-  align-items: center;
-  margin: 0 auto;
+  /* align-items: center; */
+  margin: 0 3vw;
   max-width: 1248px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 30px;
+  padding-left: 30px;
   width: 100%;
 }
 .logo img {
@@ -162,7 +168,10 @@ body {
   display: flex;
   justify-items: center;
   margin: 0 auto 0 0;
-  padding: 0 10px 0;
+  padding: 0 40px 0;
+}
+.main-nav i {
+  padding-left: 5px;
 }
 .nav-item {
   display: inline-block;
@@ -173,9 +182,10 @@ body {
 }
 .bot-group {
   display: flex;
+  padding: 0 40px 0;
 }
-
 button {
+  width: auto;
   color: #fff;
   background-color: #0abf53;
   border: 1px solid #0abf53;
@@ -183,16 +193,59 @@ button {
   font-size: 1rem;
   padding: 12px 24px;
   font-weight: 600;
-  margin: 12px 12px 12px 0;
+  margin-top: 16px;
+  margin-bottom: 12px;
   cursor: pointer;
   outline: none;
 }
-
 .nav-item:hover {
   border-top: 4px solid #0abf53;
   transition: all 0.3s ease-out;
 }
 .bot:hover {
-  border-top: none;
-  border: solid;
+  background-color: #0aa046;
+  transition: all 0.3s ease-out;
+}
+/* -------------------------main styling -- */
+
+/* --------------------------landing section style */
+.landing-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f3f6f9;
+}
+.pay {
+  max-width: 100%;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro p {
+  padding: 20px 10px;
+  font-size: 1.2em;
+  max-width: 60%;
+}
+
+.intro ul {
+  list-style: disc;
+  padding: 20px 40px;
+}
+.bot-2 {
+  color: #00112c;
+  background-color: transparent;
+  border-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 2%;
+}
+.bot-2:hover {
+  border-bottom: #00112c 1px solid;
+  transition: all 0.3s ease-out;
+}
+.bot-2::after {
+  content: '›';
+  display: inline;
+  padding-left: 5%;
 }
