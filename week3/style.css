@@ -395,3 +395,39 @@ button {
 .read-more a {
   margin-top: 3%;
 }
+.green--area {
+  background-color: #0abf53;
+  color: #fff;
+  display: flex;
+}
+.green {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 96px 24px 48px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.green-buttons {
+  display: inline-block;
+}
+.gb1 {
+  color: #fff;
+  background-color: #00112c;
+  border-color: #00112c;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.gb1:hover {
+  background-color: #00112ce8;
+}
+.gb2 {
+  color: #00112c;
+}
+
+.gb2::after {
+  content: '›';
+  display: inline;
+  padding-left: 2%;
+}
