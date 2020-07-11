@@ -1,0 +1,39 @@
+body {
+  font-family: fantasy, sans-serif;
+  background-color: #e2ac7f;
+}
+
+h1 {
+  color: black;
+  border-bottom: 5px dotted black;
+  font-style: italic;
+}
+
+p {
+  color: black;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+li {
+  color: black;
+}
+
+a:link {
+  color: #8080e4;
+}
+
+.copyright {
+  font-size: small;
+  font-style: italic;
+}
+#wrap {
+  border: 5px dotted black;
+  max-width: 50%;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #f5f5dc;
+}

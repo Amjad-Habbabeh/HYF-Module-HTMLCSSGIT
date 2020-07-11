@@ -1,0 +1,31 @@
+body {
+  font-family: verdana, sans-serif;
+  background-color: #5b7fbd;
+  padding: 10px 150px;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+li {
+  color: black;
+}
+
+a:link {
+  color: #6f3b9c;
+}
+
+.copyright {
+  font-size: small;
+  font-style: italic;
+}
