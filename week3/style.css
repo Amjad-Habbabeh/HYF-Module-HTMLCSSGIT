@@ -175,9 +175,9 @@ img {
   display: flex;
   /* align-items: center; */
   max-width: 1248px;
-  /* padding-right: 30vw; */
-  padding-left: 5vw;
-  width: 100%;
+  /* padding-right: 1vw; */
+  padding-left: 5% ;
+  width: 95%;
 }
 .menu-bar{
   display: none;
@@ -193,7 +193,8 @@ img {
   display: flex;
   justify-items: center;
   margin: 0 auto 0 0;
-  padding: 0 40px 0;
+  padding: 0 4vw 0;
+
 }
 .main-nav i {
   padding-left: 5px;
@@ -247,6 +248,9 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.intro h1{
+  max-width: 85%;
 }
 .intro p {
   padding: 2%;
@@ -551,7 +555,7 @@ form {
 }
 
 label {
-  width: 50vh;
+  width: 23vw;
   line-height: 2em;
   padding-top: 0.5%;
   padding-left: 3%;
